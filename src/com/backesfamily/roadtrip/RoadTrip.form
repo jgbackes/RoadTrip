@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.backesfamily.roadtrip.RoadTrip">
+  <grid id="27dc6" binding="_routePanel" layout-manager="FormLayout">
+    <rowspec value="center:141px:grow"/>
+    <rowspec value="top:3dlu:noGrow"/>
+    <rowspec value="center:max(m;106px):noGrow"/>
+    <rowspec value="top:4dlu:noGrow"/>
+    <rowspec value="center:13px:noGrow"/>
+    <rowspec value="top:4dlu:noGrow"/>
+    <rowspec value="center:max(d;35px):noGrow"/>
+    <colspec value="fill:min(p;540px):grow"/>
+    <constraints>
+      <xy x="20" y="20" width="560" height="544"/>
+    </constraints>
+    <properties/>
+    <border type="bevel-raised" title-resource-bundle="com/backesfamily/roadtrip/roadtrip" title-key="MESSAGE_ABOUT" title-justification="2" title-position="1">
+      <font swing-font="InternalFrame.titleFont"/>
+    </border>
+    <children>
+      <grid id="5c4df" layout-manager="FormLayout">
+        <rowspec value="center:d:noGrow"/>
+        <rowspec value="top:4dlu:noGrow"/>
+        <rowspec value="center:max(d;4px):noGrow"/>
+        <rowspec value="top:4dlu:noGrow"/>
+        <rowspec value="center:max(d;4px):noGrow"/>
+        <colspec value="fill:min(p;520px):grow"/>
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <forms top="0" left="0" bottom="0" right="13"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <grid id="232e3" layout-manager="FormLayout">
+            <rowspec value="center:d:grow"/>
+            <colspec value="fill:110px:noGrow"/>
+            <colspec value="left:4dlu:noGrow"/>
+            <colspec value="fill:d:grow"/>
+            <colspec value="left:4dlu:noGrow"/>
+            <colspec value="fill:max(d;4px):noGrow"/>
+            <colspec value="left:4dlu:noGrow"/>
+            <colspec value="fill:max(d;4px):noGrow"/>
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <forms top="0" left="13" bottom="0" right="13"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="78352" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <forms/>
+                </constraints>
+                <properties>
+                  <horizontalAlignment value="11"/>
+                  <labelFor value="ba579"/>
+                  <text resource-bundle="com/backesfamily/roadtrip/roadtrip" key="LABEL_KML_FILE"/>
+                </properties>
+              </component>
+              <component id="ba579" class="javax.swing.JTextField" binding="_sourceKMLPath">
+                <constraints>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                  <forms top="0" left="0" bottom="0" right="20" defaultalign-horz="false"/>
+                </constraints>
+                <properties>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="e58a2" class="javax.swing.JLabel" binding="_selectKML">
+                <constraints>
+                  <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <forms/>
+                </constraints>
+                <properties>
+                  <icon value="com/backesfamily/roadtrip/images/file_search.png"/>
+                  <text value=""/>
+                  <toolTipText resource-bundle="com/backesfamily/roadtrip/roadtrip" key="ALT_TEXT_CHOOSE_KML_FILE"/>
+                </properties>
+              </component>
+              <component id="e887f" class="javax.swing.JLabel" binding="_openKMLPath">
+                <constraints>
+                  <grid row="0" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <forms/>
+                </constraints>
+                <properties>
+                  <icon value="com/backesfamily/roadtrip/images/folder-yellow-parent-icon.png"/>
+                  <text value=""/>
+                  <toolTipText resource-bundle="com/backesfamily/roadtrip/roadtrip" key="MESSAGE_DISPLAY_IN_PATH"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="15c04" layout-manager="FormLayout">
+            <rowspec value="center:d:noGrow"/>
+            <colspec value="fill:110px:noGrow"/>
+            <colspec value="left:4dlu:noGrow"/>
+            <colspec value="fill:d:grow"/>
+            <colspec value="left:4dlu:noGrow"/>
+            <colspec value="fill:max(d;4px):noGrow"/>
+            <colspec value="left:4dlu:noGrow"/>
+            <colspec value="fill:max(d;4px):noGrow"/>
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <forms top="0" left="13" bottom="0" right="13"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="a9e2d" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <forms/>
+                </constraints>
+                <properties>
+                  <horizontalAlignment value="11"/>
+                  <labelFor value="6712b"/>
+                  <text resource-bundle="com/backesfamily/roadtrip/roadtrip" key="LABEL_PICTURE_FILE"/>
+                </properties>
+              </component>
+              <component id="6712b" class="javax.swing.JTextField" binding="_sourceJPGPath">
+                <constraints>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                  <forms top="0" left="0" bottom="0" right="20" defaultalign-horz="false"/>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="9675b" class="javax.swing.JLabel" binding="_selectJPG">
+                <constraints>
+                  <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <forms/>
+                </constraints>
+                <properties>
+                  <icon value="com/backesfamily/roadtrip/images/file_search.png"/>
+                  <text value=""/>
+                  <toolTipText resource-bundle="com/backesfamily/roadtrip/roadtrip" key="ALT_TEXT_CHOOSE_PICTURE_FILE"/>
+                </properties>
+              </component>
+              <component id="1c17f" class="javax.swing.JLabel" binding="_openPicturePath">
+                <constraints>
+                  <grid row="0" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <forms/>
+                </constraints>
+                <properties>
+                  <icon value="com/backesfamily/roadtrip/images/folder-yellow-parent-icon.png"/>
+                  <text value=""/>
+                  <toolTipText resource-bundle="com/backesfamily/roadtrip/roadtrip" key="DISPLAY_IN_EXPLORER"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="7f5a2" layout-manager="FormLayout">
+            <rowspec value="center:d:noGrow"/>
+            <colspec value="fill:110px:noGrow"/>
+            <colspec value="left:4dlu:noGrow"/>
+            <colspec value="fill:min(p;500px):grow"/>
+            <colspec value="left:4dlu:noGrow"/>
+            <colspec value="fill:max(d;4px):noGrow"/>
+            <colspec value="left:4dlu:noGrow"/>
+            <colspec value="fill:max(d;4px):noGrow"/>
+            <constraints>
+              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <forms top="0" left="13" bottom="0" right="13"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="65205" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <forms/>
+                </constraints>
+                <properties>
+                  <horizontalAlignment value="11"/>
+                  <labelFor value="a0df9"/>
+                  <text resource-bundle="com/backesfamily/roadtrip/roadtrip" key="LABEL_OUTPUT_DIRECTORY"/>
+                </properties>
+              </component>
+              <component id="a0df9" class="javax.swing.JTextField" binding="_outputPath">
+                <constraints>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                  <forms top="0" left="0" bottom="0" right="20" defaultalign-horz="false"/>
+                </constraints>
+                <properties>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="68248" class="javax.swing.JLabel" binding="_selectOutput">
+                <constraints>
+                  <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <forms/>
+                </constraints>
+                <properties>
+                  <icon value="com/backesfamily/roadtrip/images/1430863293_folder_search.png"/>
+                  <text value=""/>
+                  <toolTipText resource-bundle="com/backesfamily/roadtrip/roadtrip" key="ALT_TEXT_BUTTON_FOLDER_CHOICE"/>
+                </properties>
+              </component>
+              <component id="ef371" class="javax.swing.JLabel" binding="_openOutputPath">
+                <constraints>
+                  <grid row="0" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <forms/>
+                </constraints>
+                <properties>
+                  <icon value="com/backesfamily/roadtrip/images/folder-yellow-parent-icon.png"/>
+                  <text value=""/>
+                  <toolTipText value="Display output path in {0}"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+      <grid id="7d055" layout-manager="FormLayout">
+        <rowspec value="center:d:noGrow"/>
+        <colspec value="fill:100px:noGrow"/>
+        <colspec value="left:4dlu:noGrow"/>
+        <colspec value="fill:max(d;4px):noGrow"/>
+        <colspec value="left:4dlu:noGrow"/>
+        <colspec value="fill:min(d;100px):grow"/>
+        <colspec value="left:4dlu:noGrow"/>
+        <colspec value="fill:100px:noGrow"/>
+        <colspec value="left:4dlu:noGrow"/>
+        <colspec value="fill:100px:noGrow"/>
+        <constraints>
+          <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <forms top="0" left="13" bottom="0" right="13"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="1df8d" class="javax.swing.JButton" binding="_helpButton">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+              <forms/>
+            </constraints>
+            <properties>
+              <text resource-bundle="com/backesfamily/roadtrip/roadtrip" key="BUTTON_HELP"/>
+              <toolTipText resource-bundle="com/backesfamily/roadtrip/roadtrip" key="ALT_TEXT_BUTTON_HELP"/>
+            </properties>
+          </component>
+          <component id="2fda9" class="javax.swing.JButton" binding="_cancelButton">
+            <constraints>
+              <grid row="0" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+              <forms/>
+            </constraints>
+            <properties>
+              <text resource-bundle="com/backesfamily/roadtrip/roadtrip" key="BUTTON_QUIT"/>
+              <toolTipText resource-bundle="com/backesfamily/roadtrip/roadtrip" key="ALT_TEXT_BUTTON_QUIT"/>
+            </properties>
+          </component>
+          <component id="a7986" class="javax.swing.JButton" binding="_parseButton">
+            <constraints>
+              <grid row="0" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+              <forms/>
+            </constraints>
+            <properties>
+              <text resource-bundle="com/backesfamily/roadtrip/roadtrip" key="BUTTON_CREATE"/>
+              <toolTipText resource-bundle="com/backesfamily/roadtrip/roadtrip" key="ALT_TEXT_CREATE_BUTTON"/>
+            </properties>
+          </component>
+          <hspacer id="a4a9a">
+            <constraints>
+              <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+              <forms defaultalign-horz="false"/>
+            </constraints>
+          </hspacer>
+          <component id="3af76" class="javax.swing.JLabel" binding="_statusArea">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <forms/>
+            </constraints>
+            <properties>
+              <text resource-bundle="com/backesfamily/roadtrip/roadtrip" key="MESSAGE_READY"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <vspacer id="5ad70">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+          <forms defaultalign-vert="false"/>
+        </constraints>
+      </vspacer>
+      <grid id="f2f2a" layout-manager="FormLayout">
+        <rowspec value="top:m:grow"/>
+        <colspec value="fill:134px:noGrow"/>
+        <colspec value="left:4dlu:noGrow"/>
+        <colspec value="fill:d:grow"/>
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <forms top="0" left="13" bottom="0" right="13" defaultalign-vert="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="fb963" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="5" fill="0" indent="0" use-parent-layout="false"/>
+              <forms defaultalign-horz="false" defaultalign-vert="false"/>
+            </constraints>
+            <properties>
+              <horizontalAlignment value="11"/>
+              <labelFor value="71da9"/>
+              <text resource-bundle="com/backesfamily/roadtrip/roadtrip" key="LABEL_ROUTE_DESCRIPTION"/>
+            </properties>
+          </component>
+          <scrollpane id="71da9">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <forms top="0" left="0" bottom="0" right="13" defaultalign-horz="false" defaultalign-vert="false"/>
+            </constraints>
+            <properties>
+              <verticalScrollBarPolicy value="22"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="9373" class="javax.swing.JTextArea" binding="_routeDescription">
+                <constraints/>
+                <properties>
+                  <lineWrap value="true"/>
+                  <text resource-bundle="com/backesfamily/roadtrip/roadtrip" key="MESSAGE_ROUTE_DESCRIPTION"/>
+                  <wrapStyleWord value="true"/>
+                </properties>
+              </component>
+            </children>
+          </scrollpane>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>

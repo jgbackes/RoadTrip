@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+	<name>Great Lakes Maps</name>
+	<visibility>0</visibility>
+	<LookAt>
+		<longitude>-84.2</longitude>
+		<latitude>45.18</latitude>
+		<altitude>0</altitude>
+		<range>1245000</range>
+		<tilt>0</tilt>
+		<heading>0</heading>
+	</LookAt>
+	<NetworkLink>
+		<name>GLERL Nowcast Winds</name>
+		<visibility>0</visibility>
+		<LookAt>
+			<longitude>-84.2</longitude>
+			<latitude>45.18</latitude>
+			<altitude>0</altitude>
+			<range>1245000</range>
+			<tilt>0</tilt>
+			<heading>0</heading>
+		</LookAt>
+		<flyToView>1</flyToView>
+		<Link id="glwind">
+			<href>http://www.glerl.noaa.gov/res/glcfs/kml/glwind.kmz?</href>
+			<refreshMode>onInterval</refreshMode>
+			<refreshInterval>21604</refreshInterval>
+			<viewRefreshMode>onRequest</viewRefreshMode>
+		</Link>
+	</NetworkLink>
+	<NetworkLink>
+		<name>GLERL Nowcast Waves</name>
+		<visibility>0</visibility>
+		<LookAt>
+			<longitude>-84.2</longitude>
+			<latitude>45.18</latitude>
+			<altitude>0</altitude>
+			<range>1245000</range>
+			<tilt>0</tilt>
+			<heading>0</heading>
+		</LookAt>
+		<flyToView>1</flyToView>
+		<Link id="glwaves">
+			<href>http://www.glerl.noaa.gov/res/glcfs/kml/glwave.kmz?</href>
+			<refreshMode>onInterval</refreshMode>
+			<refreshInterval>21604</refreshInterval>
+			<viewRefreshMode>onRequest</viewRefreshMode>
+		</Link>
+	</NetworkLink>
+	<NetworkLink>
+		<name>GLERL Nowcast Surface Temperatures</name>
+		<visibility>0</visibility>
+		<LookAt>
+			<longitude>-84.2</longitude>
+			<latitude>45.18</latitude>
+			<altitude>0</altitude>
+			<range>1245000</range>
+			<tilt>0</tilt>
+			<heading>0</heading>
+		</LookAt>
+		<flyToView>1</flyToView>
+		<Link id="gltemp">
+			<href>http://www.glerl.noaa.gov/res/glcfs/kml/gltemp.kmz?</href>
+			<refreshMode>onInterval</refreshMode>
+			<refreshInterval>21604</refreshInterval>
+			<viewRefreshMode>onRequest</viewRefreshMode>
+		</Link>
+	</NetworkLink>
+	<NetworkLink>
+		<name>GLERL Nowcast Surface Currents</name>
+		<visibility>0</visibility>
+		<LookAt>
+			<longitude>-84.2</longitude>
+			<latitude>45.18</latitude>
+			<altitude>0</altitude>
+			<range>1245000</range>
+			<tilt>0</tilt>
+			<heading>0</heading>
+		</LookAt>
+		<flyToView>1</flyToView>
+		<Link id="glsfcur">
+			<href>http://www.glerl.noaa.gov/res/glcfs/kml/glsfcur.kmz?</href>
+			<refreshMode>onInterval</refreshMode>
+			<refreshInterval>21604</refreshInterval>
+			<viewRefreshMode>onRequest</viewRefreshMode>
+		</Link>
+	</NetworkLink>
+	<NetworkLink>
+		<name>GLERL Nowcast Ice Cover</name>
+		<visibility>0</visibility>
+		<LookAt>
+			<longitude>-84.2</longitude>
+			<latitude>45.18</latitude>
+			<altitude>0</altitude>
+			<range>1245000</range>
+			<tilt>0</tilt>
+			<heading>0</heading>
+		</LookAt>
+		<flyToView>1</flyToView>
+		<Link id="glice">
+			<href>http://www.glerl.noaa.gov/res/glcfs/kml/glice.kmz?</href>
+			<refreshMode>onInterval</refreshMode>
+			<refreshInterval>21604</refreshInterval>
+			<viewRefreshMode>onRequest</viewRefreshMode>
+		</Link>
+	</NetworkLink>
+</Document>
+</kml>

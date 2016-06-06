@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="RoadTrip" default="default" basedir=".">        
+    <import file="nbproject/build-impl.xml"/>
+
+    <taskdef name="bundleapp"
+             classname="com.backesfamily.roadtrip.AppBundlerTask"   
+             classpath="lib/appbundler-1.0.jar" />
+
+    <target name="bundle-RoadTrip">
+        <bundleapp outputdirectory="dist"
+            name="RoadTrip"
+            displayname="Road Trip"
+            identifier="components.RoadTrip"
+            mainclassname="components.RoadTrip">
+            <classpath file="dist/RoadTrip.jar" />
+        </bundleapp>
+    </target>
+</project>

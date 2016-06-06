@@ -1,0 +1,253 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="DeliveryPackage">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="GuidedTour">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:int" name="Id"/>
+              <xs:element type="xs:byte" name="TripType"/>
+              <xs:element name="Countries">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Country">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:byte" name="CountryCode"/>
+                          <xs:element name="Name">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:string">
+                                  <xs:attribute type="xs:string" name="Language_Code"/>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Names">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Name">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="Text"/>
+                        </xs:sequence>
+                        <xs:attribute type="xs:string" name="Language_Code"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Length">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:float">
+                      <xs:attribute type="xs:string" name="Unit"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Duration">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:float">
+                      <xs:attribute type="xs:string" name="Unit"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Introductions">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Introduction">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="Text"/>
+                        </xs:sequence>
+                        <xs:attribute type="xs:string" name="Language_Code"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Descriptions">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Description">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="Text"/>
+                        </xs:sequence>
+                        <xs:attribute type="xs:string" name="Language_Code"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Pictures">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Picture">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="Reference"/>
+                          <xs:element type="xs:string" name="Encoding"/>
+                          <xs:element type="xs:short" name="Width"/>
+                          <xs:element type="xs:short" name="Height"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="EntryPoints">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="EntryPoint" maxOccurs="unbounded" minOccurs="0">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:byte" name="Route" use="optional"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Routes">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Route" maxOccurs="unbounded" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:int" name="RouteID"/>
+                          <xs:element name="WayPoint" maxOccurs="unbounded" minOccurs="0">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element type="xs:string" name="Id"/>
+                                <xs:element name="Locations">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="Location">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="Address" minOccurs="0">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="ParsedAddress">
+                                                    <xs:complexType>
+                                                      <xs:sequence>
+                                                        <xs:element name="ParsedStreetAddress">
+                                                          <xs:complexType>
+                                                            <xs:sequence>
+                                                              <xs:element name="ParsedStreetName">
+                                                                <xs:complexType>
+                                                                  <xs:sequence>
+                                                                    <xs:element type="xs:string" name="StreetName"/>
+                                                                  </xs:sequence>
+                                                                </xs:complexType>
+                                                              </xs:element>
+                                                            </xs:sequence>
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                        <xs:element name="ParsedPlace" minOccurs="0">
+                                                          <xs:complexType>
+                                                            <xs:sequence>
+                                                              <xs:element type="xs:string" name="PlaceLevel4"/>
+                                                            </xs:sequence>
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                      </xs:sequence>
+                                                    </xs:complexType>
+                                                  </xs:element>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                            <xs:element name="GeoPosition">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element type="xs:float" name="Latitude"/>
+                                                  <xs:element type="xs:float" name="Longitude"/>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element type="xs:string" name="Importance"/>
+                                <xs:element name="Descriptions" minOccurs="0">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="Description">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element type="xs:string" name="Text"/>
+                                          </xs:sequence>
+                                          <xs:attribute type="xs:string" name="Language_Code" use="optional"/>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="Length">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:float">
+                                  <xs:attribute type="xs:string" name="Unit" use="optional"/>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="Duration">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:float">
+                                  <xs:attribute type="xs:string" name="Unit" use="optional"/>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element type="xs:byte" name="CostModel"/>
+                          <xs:element type="xs:byte" name="Criteria"/>
+                          <xs:element type="xs:string" name="AgoraCString"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="access"/>
+            <xs:attribute type="xs:string" name="use"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute type="xs:float" name="VersionNo"/>
+      <xs:attribute type="xs:dateTime" name="CreationTime"/>
+      <xs:attribute type="xs:float" name="MapVersion"/>
+      <xs:attribute type="xs:string" name="Language_Code_Desc"/>
+      <xs:attribute type="xs:string" name="Country_Code_Desc"/>
+      <xs:attribute type="xs:string" name="Supplier_Code_Desc"/>
+      <xs:attribute type="xs:string" name="XY_Type"/>
+      <xs:attribute type="xs:string" name="Category_Code_Desc"/>
+      <xs:attribute type="xs:string" name="Char_Set"/>
+      <xs:attribute type="xs:string" name="UpdateType"/>
+      <xs:attribute type="xs:byte" name="Coverage"/>
+      <xs:attribute type="xs:short" name="Category"/>
+      <xs:attribute type="xs:byte" name="MajorVersion"/>
+      <xs:attribute type="xs:byte" name="MinorVersion"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -197,7 +197,7 @@
                   <forms/>
                 </constraints>
                 <properties>
-                  <icon value="com/backesfamily/roadtrip/images/1430863293_folder_search.png"/>
+                  <icon value="com/backesfamily/roadtrip/images/folder_search.png"/>
                   <text value=""/>
                   <toolTipText resource-bundle="com/backesfamily/roadtrip/roadtrip" key="ALT_TEXT_BUTTON_FOLDER_CHOICE"/>
                 </properties>
